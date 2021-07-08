@@ -1,3 +1,4 @@
+from TIME import SLEEP
 print("-"*40)
 print("----   Gerenciamento de carreira   ----")
 print("-"*40)
@@ -19,7 +20,7 @@ while True:
         resp = str(input("Quer continuar? [S/N]: ")).upper()[0]
         if resp in "SN":
             break
-        print("Inválido, tente de novo")
+        print("Inválido, tente novamente")
     if resp == "N":
         break
 print("-"*50)
@@ -35,7 +36,7 @@ for k,v in enumerate(time):
     print()
 print("="*50)
 while True:
-    busca = int(input("Quer ver os dados de qual atleta? [999 para nenhum]: "))
+    busca = int(input("Quer ver os dados de qual jogador? [999 para nenhum]: "))
     if busca == 999:
         break
     if busca > len(time):
@@ -45,4 +46,5 @@ while True:
         for k,v in enumerate(time[busca]['gols']):
             print(f" No jogo {k}, ele marcou {v} gols")
     print("="*50)
-print("FIM DA LINHA...")
+print("Encerrando...")
+sleep(2)
