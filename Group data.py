@@ -28,4 +28,4 @@ while True:
 
 print(f"Total de pessoas com mais de 18 anos: {contIdade}")
 print(f"Total de Homens cadastrados: {contM}")
-print(f"Total de mulheres com menos de 20 anos: {contF}")
+print(f"Total de Mulheres com menos de 20 anos: {contF}")
